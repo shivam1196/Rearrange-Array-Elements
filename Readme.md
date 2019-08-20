@@ -1,0 +1,26 @@
+# PROBLEM 9
+## Rearrange Array Elements
+This problem asked us to rearrange a list of numbers and return a list of two numbers which were the highest and lowest
+possible numbers formed after rearranging the numbers from the list.
+The expected runtime complexity for this problem is O(nlogn)
+<br>
+
+### Algorithm:
+1. Sort the list using Merge Sort in descending order
+2. Then the digits in even index were combined to form the highest number and digits in odd index were
+    combined to form the second highest number index
+3. Finally return array of highest and second highest number
+
+
+### Time Complexity Analysis:
+Merge Sort : O(N log N)
+Rearranging: O(N)
+The overall complexity = O(N logN) + O(N) = O(N logN)
+
+
+### Space Complexity Analysis:
+List of size N: O(N)
+Highest Number String: O(N/2)
+Second Highest String: O(N/2)
+
+The overall complexity = O(N) +O(N/2)+ O(N/2) = O(N)
